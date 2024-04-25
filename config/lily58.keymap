@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                         &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
-&kp TAB    &kp Q         &kp W         &kp E         &kp R         &kp T                                &kp Y          &kp U         &kp I         &kp O         &kp P         &kp TILDE
-&mo 1      &kp A         &kp S         &kp D         &kp F         &kp G                                &kp H          &kp J         &kp K         &kp L         &kp SEMI      &kp SQT
-&kp LCTRL  &kp Z         &kp X         &kp C         &kp V         &kp B         &kp LBKT     &kp RBKT  &kp N          &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
-                                       &kp LALT      &mo 2         &kp LEFT_GUI  &kp SPACE    &kp RET   &kp BACKSPACE  &mo 3         &kp RGUI
+&kp ESC    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5                         &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
+&kp TAB    &kp Q         &kp W         &kp E            &kp R         &kp T                                &kp Y          &kp U         &kp I         &kp O         &kp P         &kp TILDE
+&mo 1      &kp A         &kp S         &kp D            &kp F         &kp G                                &kp H          &kp J         &kp K         &kp L         &kp SEMI      &kp SQT
+&kp LCTRL  &kp Z         &kp X         &kp C            &kp V         &kp B         &kp LBKT     &kp RBKT  &kp N          &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
+                                       &kp LA(LS(TAB))  &mo 2         &kp LEFT_GUI  &kp SPACE    &kp RET   &kp BACKSPACE  &mo 3         &kp LA(TAB)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -34,11 +34,11 @@
 
         shift_layer {
             bindings = <
-&kp LS(ESC)     &kp EXCL   &kp AT_SIGN  &kp HASH          &kp DOLLAR    &kp PERCENT                                     &kp CARET   &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&kp LS(TAB)     &kp LS(Q)  &kp LS(W)    &kp LS(E)         &kp LS(R)     &kp LS(T)                                       &kp LS(Y)   &kp LS(U)      &kp LS(I)      &kp LS(O)             &kp LS(P)              &kp GRAVE
-&kp LEFT_SHIFT  &kp LS(A)  &kp LS(S)    &kp LS(D)         &kp LS(F)     &kp LS(G)                                       &kp LS(H)   &kp LS(J)      &kp LS(K)      &kp LS(L)             &kp COLON              &kp DOUBLE_QUOTES
-&kp LS(LCTRL)   &kp LS(Z)  &kp LS(X)    &kp LS(C)         &kp LS(V)     &kp LS(B)    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp LS(N)   &kp LS(M)      &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
-                                        &kp LS(LEFT_ALT)  &kp LS(LGUI)  &trans       &kp LS(SPACE)     &kp LS(ENTER)    &kp DELETE  &trans         &trans
+&kp LS(ESC)    &kp EXCL   &kp AT_SIGN  &kp HASH          &kp DOLLAR    &kp PERCENT                                     &kp CARET   &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&kp LS(TAB)    &kp LS(Q)  &kp LS(W)    &kp LS(E)         &kp LS(R)     &kp LS(T)                                       &kp LS(Y)   &kp LS(U)      &kp LS(I)      &kp LS(O)             &kp LS(P)              &kp GRAVE
+&trans         &kp LS(A)  &kp LS(S)    &kp LS(D)         &kp LS(F)     &kp LS(G)                                       &kp LS(H)   &kp LS(J)      &kp LS(K)      &kp LS(L)             &kp COLON              &kp DOUBLE_QUOTES
+&kp LS(LCTRL)  &kp LS(Z)  &kp LS(X)    &kp LS(C)         &kp LS(V)     &kp LS(B)    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp LS(N)   &kp LS(M)      &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
+                                       &kp LS(LEFT_ALT)  &kp LS(LGUI)  &trans       &kp LS(SPACE)     &kp LS(ENTER)    &kp DELETE  &trans         &trans
             >;
         };
 
@@ -52,11 +52,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4                         &trans      &trans     &trans           &trans    &trans    &trans
-&kp F1        &kp F2        &kp F3        &kp F4             &kp F5           &kp F6                               &kp F7      &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE     &kp EXCL      &kp AT        &kp HASH           &kp DOLLAR       &kp PRCNT                            &kp CARET   &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&kp LEFT_ALT  &trans        &trans        &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans        &bootloader    &trans  &trans      &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                          &trans             &trans           &trans        &trans         &trans  &kp DELETE  &trans     &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4                         &trans      &trans     &trans           &trans    &trans    &trans
+&kp F1          &kp F2        &kp F3        &kp F4             &kp F5           &kp F6                               &kp F7      &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
+&kp LEFT_SHIFT  &kp EXCL      &kp AT        &kp HASH           &kp DOLLAR       &kp PRCNT                            &kp CARET   &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&kp LEFT_ALT    &trans        &trans        &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans        &bootloader    &trans  &trans      &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                            &trans             &trans           &trans        &trans         &trans  &kp DELETE  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
